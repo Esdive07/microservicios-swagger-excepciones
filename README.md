@@ -14,6 +14,10 @@ Implementación de metodos GetAll con paginación
 
 ### 3.Swagger
 Implementación de archivo controller, config y libreria en el pom.xml para los codigos de respuesta
+url swagger:
+user: http://localhost:8001/swagger-ui/index.html 
+car:  http://localhost:8002/swagger-ui/index.html 
+bike: http://localhost:8003/swagger-ui/index.html
 
 
 ### 4.Restemplate
