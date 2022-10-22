@@ -21,6 +21,7 @@ Integración por medio de restemplate para comunicar el microservicio desde user
 
 
 ### 5.Excepciones
+Pendiente
 
 
 
