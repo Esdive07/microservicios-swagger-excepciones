@@ -1,0 +1,362 @@
+{
+	"info": {
+		"_postman_id": "035262e5-6d67-41f2-8649-4364dce99682",
+		"name": "MisEndpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "POS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Esme\",\r\n    \"email\": \"esme@email.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/user",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/user/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GETALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/user",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GETALL Paginado",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/user/2/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"user",
+								"2",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GETUserCar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/user/cars/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"user",
+								"cars",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GETUserBike",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/user/bikes/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"user",
+								"bikes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cars",
+			"item": [
+				{
+					"name": "POS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brand\": \"car2\",\r\n    \"model\": \"modelo\",\r\n    \"userId\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8002/car",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"car"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8002/car/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"car",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GETALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8002/car",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"car"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GETALL Paginado",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8002/car/2/10",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"car",
+								"2",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GETByUserId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8002/car/byUserId/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"car",
+								"byUserId",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bikes",
+			"item": [
+				{
+					"name": "POS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brand\": \"bike2\",\r\n    \"model\": \"modelo\",\r\n    \"userId\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8003/bike",
+							"host": [
+								"localhost"
+							],
+							"port": "8003",
+							"path": [
+								"bike"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8003/bike/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8003",
+							"path": [
+								"bike",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GETALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8003/bike",
+							"host": [
+								"localhost"
+							],
+							"port": "8003",
+							"path": [
+								"bike"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GETALL Paginado",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8003/bike/0/10?query",
+							"host": [
+								"localhost"
+							],
+							"port": "8003",
+							"path": [
+								"bike",
+								"0",
+								"10"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GETByUserId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8003/bike/byUserId/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8003",
+							"path": [
+								"bike",
+								"byUserId",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
